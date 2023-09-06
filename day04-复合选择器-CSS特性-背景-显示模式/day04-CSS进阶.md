@@ -247,14 +247,14 @@ Emmet写法：代码的**简写**方式，输入缩写 VS Code 会自动生成�
 
 <!--![1680319897697](assets/1680319897697.png)-->
 
-| 说明         | 标签结构                                | Emment    |
-| ------------ | --------------------------------------- | --------- |
-| 类选择器     | <div class="box"></div>                 | div.box   |
-| id 选择器    | <div id="box"></div>                    | div#box   |
-| 同级标签     | <div></div><p></p>                      | div+p     |
-| 父子级标签   | <div><p></p></div>                      | div>p     |
-| 多个相同标签 | <span></span><span></span><span></span> | span*3    |
-| 有内容的标签 | <div>内容</div>                         | div{内容} |
+| 说明         | 标签结构                                  | Emment    |
+| ------------ | ----------------------------------------- | --------- |
+| 类选择器     | `<div class="box"></div>`                 | div.box   |
+| id 选择器    | `<div id="box"></div>`                    | div#box   |
+| 同级标签     | `<div></div><p></p>`                      | div+p     |
+| 父子级标签   | `<div><p></p></div>`                      | div>p     |
+| 多个相同标签 | `<span></span><span></span><span></span>` | span*3    |
+| 有内容的标签 | `<div>内容</div>`                         | div{内容} |
 
 * CSS：大多数简写方式为属性单词的**首字母** 
 
@@ -263,7 +263,7 @@ Emmet写法：代码的**简写**方式，输入缩写 VS Code 会自动生成�
 | 说明      | CSS属性                                           | Emment            |
 | --------- | ------------------------------------------------- | ----------------- |
 | 宽度      | width                                             | w                 |
-| 宽度500px | width: 500px;w500                                 | w500              |
+| 宽度500px | width: 500px;                                     | w500              |
 | 背景色    | background-color                                  | bgc               |
 | 多个属性  | width: 200px;height: 100px;background-color: #fff | w200+h100+bgc#fff |
 
