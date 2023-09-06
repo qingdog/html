@@ -61,3 +61,36 @@
 .project .row div:nth-child(4) a {
   background-color: #89d04f;
 }
+
+/* index2.html */
+.row2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.row2 div {
+  height: 200px;
+  background: mistyrose;
+
+  border-radius: 4px;
+  margin: 1vw;
+}
+/* 从大到小 - 最大宽度 小于768px 时生效 */
+@media (max-width: 768px) {
+  .row2 div {
+    width: 90%
+  }
+}
+
+/* 从大到小 - 最小宽度 大于768px 小于992px 时生效 */
+@media (min-width: 768px) {
+  .row2 div {
+    width: 40%
+  }
+}
+/* 从大到小 - 最小宽度 大于992px 时生效 */
+@media (min-width: 992px) {
+  .row2 div {
+    width: 20%
+  }
+}

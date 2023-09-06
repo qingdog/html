@@ -16,8 +16,31 @@
 
 ### 书写顺序
 
-* min-width（从小到大）
 * max-width（从大到小）
+
+* min-width（从小到大）
+
+```css
+/* 从大到小 - 最大宽度 小于768px 时生效 */
+@media (max-width: 768px) {
+  .carousel .carousel-item {
+    height: 250px;
+  }
+}
+
+/* 从大到小 - 最小宽度 大于768px 小于992px 时生效 */
+@media (min-width: 768px) {
+  .carousel .carousel-item {
+    height: 400px;
+  }
+}
+/* 从大到小 - 最小宽度 大于992px 时生效 */
+@media (min-width: 992px) {
+  .carousel .carousel-item {
+    height: 500px;
+  }
+}
+```
 
 ### 案例-左侧隐藏
 
@@ -207,7 +230,7 @@ Bootstrap 是由 Twitter 公司开发维护的前端 UI 框架，它提供了大
 * HTML 结构
 
 ```html
-<title>腾讯全端</title>
+<title>腾讯全端 - alloyteam.com</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <!-- 层叠性：咱们的css 要 层叠 框架的 -->
 <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
@@ -374,7 +397,7 @@ Bootstrap 是由 Twitter 公司开发维护的前端 UI 框架，它提供了大
 }
 ```
 
-### 开源项目响应式
+### 开源项目Bootstrap响应式
 
 * HTML 结构
 
@@ -408,7 +431,7 @@ Bootstrap 是由 Twitter 公司开发维护的前端 UI 框架，它提供了大
 }
 ```
 
-### 开源项目内容布局
+### 开源项目内容Bootstrap布局
 
 * HTML 结构
 
@@ -466,3 +489,56 @@ Bootstrap 是由 Twitter 公司开发维护的前端 UI 框架，它提供了大
 }
 ```
 
+### 补充 - 媒资查询布局
+
+> ```html
+> <div class="project container">
+>   <div class="title">
+>     <h2>OpenSource / 开源项目</h2>
+>     <p>种类众多的开源项目，让你爱不释手</p>
+>   </div>
+>   <div class="content2">
+>     <div class="row2">
+>       <div class=""><a href="#">1</a></div>
+>       <div class=""><a href="#">1</a></div>
+>       <div class=""><a href="#">1</a></div>
+>       <div class=""><a href="#">1</a></div>
+>     </div>
+>   </div>
+> </div>
+> 
+> <style>
+> /* index2.html */
+> .row2 {
+>   display: flex;
+>   justify-content: center;
+>   flex-wrap: wrap;
+> }
+> .row2 div {
+>   height: 200px;
+>   background: mistyrose;
+> 
+>   border-radius: 4px;
+>   margin: 1vw;
+> }
+> /* 从大到小 - 最大宽度 小于768px 时生效 */
+> @media (max-width: 768px) {
+>   .row2 div {
+>     width: 90%
+>   }
+> }
+> 
+> /* 从大到小 - 最小宽度 大于768px 小于992px 时生效 */
+> @media (min-width: 768px) {
+>   .row2 div {
+>     width: 40%
+>   }
+> }
+> /* 从大到小 - 最小宽度 大于992px 时生效 */
+> @media (min-width: 992px) {
+>   .row2 div {
+>     width: 20%
+>   }
+> }
+> </style>
+> ```

@@ -281,6 +281,7 @@ background-image: linear-gradient(
   width: 100%;
   height: 100%;
   background-image: linear-gradient(
+      /* transparent透明到0.5不透明度 */
       transparent,
       rgba(0,0,0,0.5)
   );

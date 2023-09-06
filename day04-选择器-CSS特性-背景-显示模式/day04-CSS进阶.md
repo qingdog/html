@@ -110,7 +110,14 @@
 
 #### 超链接伪类
 
-![1680319272736](assets/1680319272736.png)
+<!--![1680319272736](assets/1680319272736.png)-->
+
+| 选择器   | 作用           |
+| -------- | -------------- |
+| :link    | 访问前         |
+| :visited | 访问后         |
+| :hover   | 鼠标悬停       |
+| :active  | 点击时（激活） |
 
 > 提示：如果要给超链接设置以上四个状态，需要按 LVHA 的顺序书写。 
 >
@@ -125,6 +132,33 @@ a:hover {
   color: green;
 }
 ```
+
+#### 补充 - 聚焦伪类
+
+> 给 `<div>` 元素添加了 `tabindex="0"` 属性，这使它可以通过按 Tab 键来聚焦，同时也可以通过点击来聚焦。
+>
+> 使用 `:focus` 伪类定义了聚焦状态下的样式，可以使用 `outline: none;` 去掉默认的焦点边框样式。
+>
+> ```html
+> <style>
+>   div {
+>     width: 100px;
+>     height: 100px;
+>     background: mistyrose;
+>   }
+>   div:hover {
+>     background: skyblue;
+>   }
+>   div:focus {
+>     background: aquamarine;
+>     /*outline: none;*/
+>   }
+> </style>
+> <body>
+>   <div tabindex="0">
+>   </div>
+> </body>
+> ```
 
 ## 02-CSS特性
 
@@ -211,11 +245,27 @@ Emmet写法：代码的**简写**方式，输入缩写 VS Code 会自动生成�
 
 * HTML标签
 
-![1680319897697](assets/1680319897697.png)
+<!--![1680319897697](assets/1680319897697.png)-->
+
+| 说明         | 标签结构                                | Emment    |
+| ------------ | --------------------------------------- | --------- |
+| 类选择器     | <div class="box"></div>                 | div.box   |
+| id 选择器    | <div id="box"></div>                    | div#box   |
+| 同级标签     | <div></div><p></p>                      | div+p     |
+| 父子级标签   | <div><p></p></div>                      | div>p     |
+| 多个相同标签 | <span></span><span></span><span></span> | span*3    |
+| 有内容的标签 | <div>内容</div>                         | div{内容} |
 
 * CSS：大多数简写方式为属性单词的**首字母** 
 
-![1680319926111](assets/1680319926111.png)
+<!--![1680319926111](assets/1680319926111.png)-->
+
+| 说明      | CSS属性                                           | Emment            |
+| --------- | ------------------------------------------------- | ----------------- |
+| 宽度      | width                                             | w                 |
+| 宽度500px | width: 500px;w500                                 | w500              |
+| 背景色    | background-color                                  | bgc               |
+| 多个属性  | width: 200px;height: 100px;background-color: #fff | w200+h100+bgc#fff |
 
 ## 04-背景属性
 
