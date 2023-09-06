@@ -27,16 +27,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!– 视口标签 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Document</title>
+  <title>Document</title>
 </head>
 <body>
-  
+  
 </body>
 </html>
 ```
@@ -82,9 +82,9 @@
 
 ```css
 @media (width:320px) {
-  html {
-    background-color: green;
-  }
+  html {
+    background-color: green;
+  }
 }
 ```
 
@@ -102,8 +102,8 @@ flexible.js 是手淘开发出的一个用来适配移动端的 js 库。
 
 ```html
 <body>
-  ......
-  <script src="./js/flexible.js"></script>
+  ......
+  <script src="./js/flexible.js"></script>
 </body>
 ```
 
@@ -172,10 +172,10 @@ VS Code 插件：Easy LESS，保存 less文件后自动生成对应的 CSS 文�
 @myColor: pink;
 // 使用变量
 .box {
-  color: @myColor;
+  color: @myColor;
 }
 a {
-  color: @myColor;
+  color: @myColor;
 }
 ```
 
@@ -205,7 +205,7 @@ a {
 
 ### 禁止导出
 
-写法：在 less 文件第一行添加:  // out: false 
+写法：在 less 文件第一行添加:  // out: false 
 
 ![1681811772496](assets/1681811772496.png)
 
@@ -228,8 +228,8 @@ a {
 <link rel="stylesheet" href="./css/index.css">
 
 <body>
-  ......
-  <script src="./js/flexible.js"></script>
+  ......
+  <script src="./js/flexible.js"></script>
 </body>
 ```
 
@@ -239,6 +239,9 @@ a {
 // out: ../css/
 
 @import "./base";
+
+// 定义变量
+@rootSize:37.5rem;
 ```
 
 ### 头部布局

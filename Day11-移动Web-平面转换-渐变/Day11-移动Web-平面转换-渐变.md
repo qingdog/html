@@ -242,10 +242,10 @@ transform: skew();
 
 ```css
 background-image: linear-gradient(
-  渐变方向,
-  颜色1 终点位置,
-  颜色2 终点位置,
-  ......
+  渐变方向,
+  颜色1 终点位置,
+  颜色2 终点位置,
+  ......
 );
 ```
 
@@ -298,10 +298,10 @@ background-image: linear-gradient(
 
 ```css
 background-image: radial-gradient(
-  半径 at 圆心位置,
-  颜色1 终点位置,
-  颜色2 终点位置,
-  ......
+  半径 at 圆心位置,
+  颜色1 终点位置,
+  颜色2 终点位置,
+  ......
 );
 ```
 

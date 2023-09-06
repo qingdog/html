@@ -319,14 +319,14 @@ iconfont 图标库：<https://www.iconfont.cn/>
 
 ```css
 img {
-  width: 200px;
-  height: 200px;
-  transition: all 1s;
+  width: 200px;
+  height: 200px;
+  transition: all 1s;
 }
 
 img:hover {
-  width: 500px;
-  height: 500px;
+  width: 500px;
+  height: 500px;
 }
 ```
 

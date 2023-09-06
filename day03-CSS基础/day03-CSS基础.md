@@ -12,10 +12,10 @@
 <title>CSS 初体验</title>
 <style>
   /* 选择器 { } */
-  p {
+  p {
     /* CSS 属性 */
-    color: red;
-  }
+    color: red;
+  }
 </style>
 
 <p>体验 CSS</p>
@@ -54,9 +54,9 @@
 
 ```html
 <style>
-  p {
-    color: red;
-  }
+  p {
+    color: red;
+  }
 </style>
 
 ```
@@ -74,10 +74,10 @@
 
 ```html
 <style>
-  /* 定义类选择器 */
-  .red {
-    color: red;
-  }
+  /* 定义类选择器 */
+  .red {
+    color: red;
+  }
 </style>
 
 <!-- 使用类选择器 -->
@@ -106,10 +106,10 @@
 
 ```html
 <style>
-  /* 定义 id 选择器 */
-  #red {
-    color: red;
-  }
+  /* 定义 id 选择器 */
+  #red {
+    color: red;
+  }
 </style>
 
 <!-- 使用 id 选择器 -->
@@ -147,7 +147,7 @@
 
 ```css
 p {
-  font-size: 30px;
+  font-size: 30px;
 }
 ```
 
@@ -235,7 +235,7 @@ font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\
 
 ```css
 div {
-  font: italic 700 30px/2 楷体;
+  font: italic 700 30px/2 楷体;
 }
 ```
 
@@ -252,7 +252,7 @@ div {
 
 ```css
 p {
-  text-indent: 2em;
+  text-indent: 2em;
 }
 ```
 
@@ -272,13 +272,13 @@ text-align: center;
 
 ```html
 <style>
-  div {
-    text-align: center;
-  }
+  div {
+    text-align: center;
+  }
 </style>
 
 <div>
-  <img src="./images/1.jpg" alt="">
+  <img src="./images/1.jpg" alt="">
 </div>
 ```
 

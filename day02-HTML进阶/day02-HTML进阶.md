@@ -16,9 +16,9 @@
 
 ```html
 <ul>
-  <li>第一项</li>
-  <li>第二项</li>
-  <li>第三项</li>
+  <li>第一项</li>
+  <li>第二项</li>
+  <li>第三项</li>
   ……
 </ul>
 ```
@@ -36,9 +36,9 @@
 
 ```html
 <ol>
-  <li>第一项</li>
-  <li>第二项</li>
-  <li>第三项</li>
+  <li>第一项</li>
+  <li>第二项</li>
+  <li>第三项</li>
   ……
 </ol>
 ```
@@ -54,8 +54,8 @@
 
 ```html
 <dl>
-  <dt>列表标题</dt>
-  <dd>列表描述 / 详情</dd>
+  <dt>列表标题</dt>
+  <dd>列表描述 / 详情</dd>
    ……
 </dl>
 ```
@@ -240,11 +240,11 @@ input 标签 type 属性值不同，则功能不同。
 
 ```html
 <select>
-  <option>北京</option>
-  <option>上海</option>
-  <option>广州</option>
-  <option>深圳</option>
-  <option selected>武汉</option>
+  <option>北京</option>
+  <option>上海</option>
+  <option>广州</option>
+  <option>深圳</option>
+  <option selected>武汉</option>
 </select>
 ```
 

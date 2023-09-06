@@ -20,8 +20,8 @@
 
 ```css
 .wrapper {
-  margin: 0 auto;
-  width: 1200px;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 body {

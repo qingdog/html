@@ -14,7 +14,7 @@
 
 ```css
 li:first-child {
-  background-color: green;
+  background-color: green;
 }
 ```
 
@@ -34,10 +34,10 @@ li:first-child {
 
 ```css
 div::before {
-  content: "before 伪元素";
+  content: "before 伪元素";
 }
 div::after {
-  content: "after 伪元素";
+  content: "after 伪元素";
 }
 ```
 
@@ -71,12 +71,12 @@ PxCook（像素大厨） 是一款切图设计工具软件。支持PSD文件的�
 
 ```css
 div {
-  margin: 50px;
-  border: 5px solid brown;
-  padding: 20px;
-  width: 200px;
-  height: 200px;
-  background-color: pink;
+  margin: 50px;
+  border: 5px solid brown;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
 }
 ```
 
@@ -98,10 +98,10 @@ div {
 
 ```css
 div {
-  border: 5px solid brown;
-  width: 200px;
-  height: 200px;
-  background-color: pink;
+  border: 5px solid brown;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
 }
 ```
 
@@ -113,13 +113,13 @@ div {
 
 ```css
 div {
-  border-top: 2px solid red;
-  border-right: 3px dashed green;
-  border-bottom: 4px dotted blue;
-  border-left: 5px solid orange;
-  width: 200px;
-  height: 200px;
-  background-color: pink;
+  border-top: 2px solid red;
+  border-right: 3px dashed green;
+  border-bottom: 4px dotted blue;
+  border-left: 5px solid orange;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
 }
 ```
 
@@ -132,15 +132,15 @@ div {
 ```css
 div {
   /* 四个方向 内边距相同 */
-  padding: 30px;
-  /* 单独设置一个方向内边距 */
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 40px;
-  padding-left: 80px;
-  width: 200px;
-  height: 200px;
-  background-color: pink;
+  padding: 30px;
+  /* 单独设置一个方向内边距 */
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 80px;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
 }
 ```
 
@@ -181,10 +181,10 @@ div {
 
 ```css
 div {
-  margin: 0 auto;
-  width: 1000px;
-  height: 200px;
-  background-color: pink;
+  margin: 0 auto;
+  width: 1000px;
+  height: 200px;
+  background-color: pink;
 }
 ```
 
@@ -199,13 +199,13 @@ div {
 ```css
 /* 清除默认内外边距 */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 /* 清除列表项目符号 */
 li {
-  list-style: none;
+  list-style: none;
 }
 ```
 
@@ -229,10 +229,10 @@ li {
 
 ```css
 .one {
-  margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 .two {
-  margin-top: 20px;
+  margin-top: 20px;
 }
 ```
 
@@ -244,10 +244,10 @@ li {
 
 ```css
 .son {
-  margin-top: 50px;
-  width: 100px;
-  height: 100px;
-  background-color: orange;
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: orange;
 }
 ```
 
@@ -267,11 +267,11 @@ li {
 
 ```css
 span {
-  /* margin 和 padding 属性，无法改变垂直位置 */
-  margin: 50px;
-  padding: 20px;
-  /* 行高可以改变垂直位置 */
-  line-height: 100px;
+  /* margin 和 padding 属性，无法改变垂直位置 */
+  margin: 50px;
+  padding: 20px;
+  /* 行高可以改变垂直位置 */
+  line-height: 100px;
 }
 ```
 
@@ -299,11 +299,11 @@ span {
 
 ```css
 img {
-  width: 200px;
-  height: 200px;
-  
-  border-radius: 100px;
-  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  
+  border-radius: 100px;
+  border-radius: 50%;
 }
 ```
 
@@ -313,10 +313,10 @@ img {
 
 ```css
 div {
-  width: 200px;
-  height: 80px;
-  background-color: orange;
-  border-radius: 40px;
+  width: 200px;
+  height: 80px;
+  background-color: orange;
+  border-radius: 40px;
 }
 ```
 
@@ -337,10 +337,10 @@ div {
 
 ```css
 div {
-  width: 200px;
-  height: 80px;
-  background-color: orange;
-  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.5) inset;
+  width: 200px;
+  height: 80px;
+  background-color: orange;
+  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.5) inset;
 }
 ```
 

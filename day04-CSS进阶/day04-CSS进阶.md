@@ -16,13 +16,13 @@
 
 ```html
 <style>
-  div span {
-    color: red;
-  }
+  div span {
+    color: red;
+  }
 </style>
-<span> span 标签</span>
+<span> span 标签</span>
 <div>
-  <span>这是 div 的儿子 span</span >
+  <span>这是 div 的儿子 span</span >
 </div>
 ```
 
@@ -34,16 +34,16 @@
 
 ```html
 <style>
-  div > span {
-    color: red;
-  }
+  div > span {
+    color: red;
+  }
 </style>
 
 <div>
-  <span>这是 div 里面的 span</span>
-  <p>
-    <span>这是 div 里面的 p 里面的 span</span>
-  </p>
+  <span>这是 div 里面的 span</span>
+  <p>
+    <span>这是 div 里面的 p 里面的 span</span>
+  </p>
 </div>
 
 ```
@@ -56,11 +56,11 @@
 
 ```html
 <style>
-  div,
-  p,
-  span {
-    color: red;
-  }
+  div,
+  p,
+  span {
+    color: red;
+  }
 </style>
 
 <div> div 标签</div>
@@ -76,8 +76,8 @@
 
 ```html
 <style>
-  p.box {
-  color: red;
+  p.box {
+  color: red;
 }
 </style>
 
@@ -96,12 +96,12 @@
 
 ```html
 <style>
-  a:hover {
-    color: red;
-  }
+  a:hover {
+    color: red;
+  }
   .box:hover {
-    color: green;
-  }
+    color: green;
+  }
 </style>
 
 <a href="#">a 标签</a>
@@ -151,14 +151,14 @@ CSS特性：化简代码 / 定位问题，并解决问题
 
 ```html
 <style>
-  div {
-    color: red;
+  div {
+    color: red;
     font-weight: 700;
-  }
-  div {
-    color: green;
-    font-size: 30px;
-  }
+  }
+  div {
+    color: green;
+    font-size: 30px;
+  }
 </style>
 
 <div>div 标签</div>
@@ -172,12 +172,12 @@ CSS特性：化简代码 / 定位问题，并解决问题
 
 ```html
 <style>
-  div {
-    color: red;
-  }
-  .box {
-    color: green;
-  }
+  div {
+    color: red;
+  }
+  .box {
+    color: green;
+  }
 </style>
 
 <div class="box">div 标签</div>
@@ -230,10 +230,10 @@ Emmet写法：代码的**简写**方式，输入缩写 VS Code 会自动生成�
 
 ```css
 div {
-  width: 400px;
-  height: 400px;
+  width: 400px;
+  height: 400px;
 
-  background-image: url(./images/1.png);
+  background-image: url(./images/1.png);
 }
 ```
 
@@ -247,12 +247,12 @@ div {
 
 ```css
 div {
-  width: 400px;
-  height: 400px;
-  background-color: pink;
-  background-image: url(./images/1.png);
+  width: 400px;
+  height: 400px;
+  background-color: pink;
+  background-image: url(./images/1.png);
 
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 ```
 
@@ -272,14 +272,14 @@ div {
 
 ```css
 div {
-  width: 400px;
-  height: 400px;
-  background-color: pink;
-  background-image: url(./images/1.png);
-  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  background-color: pink;
+  background-image: url(./images/1.png);
+  background-repeat: no-repeat;
 
-  background-position: center bottom;
-  background-position: 50px -100px;
+  background-position: center bottom;
+  background-position: 50px -100px;
   background-position: 50px center;
 }
 ```
@@ -306,14 +306,14 @@ div {
 
 ```css
 div {
-  width: 500px;
-  height: 400px;
-  background-color: pink;
-  background-image: url(./images/1.png);
-  background-repeat: no-repeat;
-  
-  background-size: cover;
-  background-size: contain;
+  width: 500px;
+  height: 400px;
+  background-color: pink;
+  background-image: url(./images/1.png);
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  background-size: contain;
 }
 ```
 
@@ -329,9 +329,9 @@ div {
 
 ```css
 body {
-  background-image: url(./images/bg.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: url(./images/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 ```
 
@@ -343,10 +343,10 @@ body {
 
 ```css
 div {
-  width: 400px;
-  height: 400px;
+  width: 400px;
+  height: 400px;
 
-  background: pink url(./images/1.png) no-repeat right center/cover;
+  background: pink url(./images/1.png) no-repeat right center/cover;
 }
 ```
 
