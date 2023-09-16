@@ -28,13 +28,13 @@
   }
 }
 
-/* 从大到小 - 最小宽度 大于768px 小于992px 时生效 */
+/* 从小到大 - 最小宽度 大于768px 小于992px 时生效 */
 @media (min-width: 768px) {
   .carousel .carousel-item {
     height: 400px;
   }
 }
-/* 从大到小 - 最小宽度 大于992px 时生效 */
+/* 从小到大 - 最小宽度 大于992px 时生效 */
 @media (min-width: 992px) {
   .carousel .carousel-item {
     height: 500px;
@@ -236,8 +236,6 @@ Bootstrap 是由 Twitter 公司开发维护的前端 UI 框架，它提供了大
 <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="./Bootstrap/font/bootstrap-icons.css">
 <link rel="stylesheet" href="./css/index.css">
-
-
 
 <script src="./Bootstrap/js/bootstrap.min.js"></script>
 ```
@@ -493,52 +491,55 @@ Bootstrap 是由 Twitter 公司开发维护的前端 UI 框架，它提供了大
 
 > ```html
 > <div class="project container">
->   <div class="title">
->     <h2>OpenSource / 开源项目</h2>
->     <p>种类众多的开源项目，让你爱不释手</p>
->   </div>
->   <div class="content2">
->     <div class="row2">
->       <div class=""><a href="#">1</a></div>
->       <div class=""><a href="#">1</a></div>
->       <div class=""><a href="#">1</a></div>
->       <div class=""><a href="#">1</a></div>
->     </div>
->   </div>
+>       <div class="title">
+>            <h2>OpenSource / 开源项目</h2>
+>            <p>种类众多的开源项目，让你爱不释手</p>
+>       </div>
+>       <div class="content2">
+>            <div class="row2">
+>                <div class=""><a href="#">1</a></div>
+>                <div class=""><a href="#">1</a></div>
+>                <div class=""><a href="#">1</a></div>
+>                <div class=""><a href="#">1</a></div>
+>            </div>
+>       </div>
 > </div>
 > 
 > <style>
 > /* index2.html */
 > .row2 {
->   display: flex;
->   justify-content: center;
->   flex-wrap: wrap;
+>       display: flex;
+>       justify-content: center;
+>       flex-wrap: wrap;
 > }
 > .row2 div {
->   height: 200px;
->   background: mistyrose;
+>       height: 200px;
+>       background: mistyrose;
 > 
->   border-radius: 4px;
->   margin: 1vw;
+>       border-radius: 4px;
+>       margin: 1vw;
 > }
 > /* 从大到小 - 最大宽度 小于768px 时生效 */
 > @media (max-width: 768px) {
->   .row2 div {
->     width: 90%
->   }
+>       .row2 div {
+>         	width: 90%
+>       }
 > }
 > 
-> /* 从大到小 - 最小宽度 大于768px 小于992px 时生效 */
+> /* 从小到大 - 最小宽度 大于768px 小于992px 时生效 */
 > @media (min-width: 768px) {
->   .row2 div {
->     width: 40%
->   }
+>       .row2 div {
+>         	width: 40%
+>       }
 > }
-> /* 从大到小 - 最小宽度 大于992px 时生效 */
+> /* 从小到大 - 最小宽度 大于992px 时生效 */
 > @media (min-width: 992px) {
->   .row2 div {
->     width: 20%
->   }
+>       .row2 div {
+>         	width: 20%
+>       }
 > }
 > </style>
 > ```
+
+
+

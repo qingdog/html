@@ -385,6 +385,11 @@ body {
 }
 ```
 
+> ```css
+> background-attachment: local;
+> background-attachment: scroll;
+> ```
+
 ### 背景复合属性
 
 属性名：**background**（bg）
@@ -466,20 +471,20 @@ div {
 <style>
 /* 默认效果 */
 a {
-display: block;
-width: 200px;
-height: 80px;
-background-color: #3064bb;
-color: #fff;
-text-decoration: none;
-text-align: center;
-line-height: 80px;
-font-size: 18px;
+    display: block;
+    width: 200px;
+    height: 80px;
+    background-color: #3064bb;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
 }
 
 /* 鼠标悬停的效果 */
 a:hover {
-background-color: #608dd9;
+	background-color: #608dd9;
 }
 </style>
 ```

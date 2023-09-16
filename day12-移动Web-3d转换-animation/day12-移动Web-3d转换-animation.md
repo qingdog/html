@@ -64,7 +64,7 @@ perspective: 视距;
 * rotate3d(x, y, z, 角度度数) ：用来设置自定义旋转轴的位置及旋转的角度
 * x，y，z 取值为0-1之间的数字
 
-### 立体呈现
+### 立体呈现（preserve-3d）
 
 作用：设置元素的子元素是位于 3D 空间中还是平面中
 
@@ -122,8 +122,10 @@ perspective: 视距;
   transform: translateZ(20px);
 }
 
+/* x指向右，y指向下，z指向人 */
 .nav li a:last-child {
   background-color: orange;
+  /* 向里旋转90度， 向人靠近20像素。即旋转后向上移动 */
   transform: rotateX(90deg) translateZ(20px);
 }
 
@@ -135,10 +137,79 @@ perspective: 视距;
 ### 缩放
 
 ```css
-transform: scale3d(x, y, z);
-transform: scaleX();
-transform: scaleY();
-transform: scaleZ();
+    <style>
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .nav {
+        width: 300px;
+        height: 40px;
+        margin: 50px auto;
+      }
+
+      .nav li {
+        position: relative;
+        float: left;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        transition: all 0.5s;
+        transform-style: preserve-3d;
+
+        transform: scaleX(0.5); //使li直接变瘦 3d转换时将开始恢复
+        transform: scaleY(2);
+        transform: scaleZ(3);
+        transform: scale3d(0.5, 2, 3);
+        
+        transform: scaleZ(3); //3d转换时将会“凸起” 转换完成后会“凹陷”成原大小
+      }
+
+      .nav li a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .nav li a:first-child {
+        background-color: green;
+        transform: translateZ(20px);
+      }
+
+      .nav li a:last-child {
+        background-color: orange;
+        transform: rotateX(90deg) translateZ(20px);
+      }
+
+      .nav li:hover {
+        transform: rotateX(-90deg);
+      }
+    </style>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="#">首页</a>
+          <a href="#">Index</a>
+        </li>
+        <li>
+          <a href="#">登录</a>
+          <a href="#">Login</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+          <a href="#">Register</a>
+        </li>
+      </ul>
+    </div>
+  </body>
 ```
 
 
@@ -188,6 +259,20 @@ animation: 动画名称 动画花费时长;
 
 ![1681724035890](assets/1681724035890.png)
 
+| 属性                        | 作用               | 取值                                            |
+| --------------------------- | ------------------ | ----------------------------------------------- |
+| `animation-name`            | 动画名称           |                                                 |
+| `animation-duration`        | 动画时长           |                                                 |
+| animation-delay             | 延迟时间           |                                                 |
+| animation-fill-mode         | 动画执行完毕时状态 | forwards：最后一帧状态<br>backwards：第一帧状态 |
+| `animation-time-function`   | 速度曲线           | `setps（数字）：逐帧动画`<br>linear：匀速移动   |
+| `animation-iteration-count` | 重复次数           | `infinite：为无限循环`                          |
+| `animation-direction`       | 动画执行方向       | `alternate：为方向`                             |
+| animation-play-state        | 暂停动画           | paused为暂停，通常配合`:hover`使用              |
+
+
+
+
 ### 案例-走马灯
 
 ![1681724053648](assets/1681724053648.png)
@@ -221,7 +306,7 @@ animation: 动画名称 动画花费时长;
 
 .box ul {
   display: flex;
-  animation: move 6s infinite linear;
+  animation: move 6s infinite linear; /*默认linear匀速移动*/
 }
 
 /* 定义位移动画；ul使用动画；鼠标悬停暂停动画 */
@@ -275,7 +360,7 @@ div {
     background-position: 0 0;
   }
   to {
-    background-position: -1680px 0;
+    background-position: -1680px 0; //1680px为background-image图片宽度
   }
 }
 ```
@@ -288,6 +373,40 @@ animation:
   动画二,
   ... ...
 ;
+```
+
+```html
+  <style>
+    div {
+      width: 140px;
+      height: 140px;
+      /* border: 1px solid #000; */
+      background-image: url(./images/bg.png);
+      animation: 
+        run 1s steps(12) infinite,
+        move 3s forwards
+      ;
+    }
+
+    /* 当动画的开始状态样式 跟 盒子默认样式相同，可以省略动画开始状态的代码 */
+    @keyframes run {
+      /* from {
+        background-position: 0 0;
+      } */
+      to {
+        background-position: -1680px 0;
+      }
+    }
+
+    @keyframes move {
+      /* 0% {
+        transform: translate(0);
+      } */
+      100% {
+        transform: translate(800px);
+      }
+    }
+  </style>
 ```
 
 ## 03-综合案例-全名出游
@@ -396,3 +515,6 @@ body {
   }
 }
 ```
+
+
+

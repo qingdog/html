@@ -32,7 +32,7 @@ div {
   position: relative;
   top: 100px;
   left: 200px;
-}	
+}
 ```
 
 ### 绝对定位
@@ -108,6 +108,35 @@ div {
   width: 500px;
 }
 ```
+
+### 补充 - 粘性定位
+
+> ```html
+> <style>
+>     	/* 定位表现为在跨越特定阈值前为相对定位，之后为固定定位 */
+> 	.sidebar {
+>             flex: 1 1 0;
+> 
+>             background-color: #222;
+>             color: white;
+>             height: 100vh;
+>             padding: 20px;
+> 
+>             overflow: hidden;
+>             
+>             position: sticky;
+>             /* 指定 top, right, bottom 或 left 四个阈值其中之一，才可使粘性定位生效。否则其行为与相对定位相同。 */
+>             top: 0;
+>         }
+> </style>
+> <body>
+>     <div class="sidebar">
+>         Sidebar content goes here
+>     </div>
+> </body>
+> ```
+>
+> 
 
 ### 堆叠层级z-index
 
@@ -516,3 +545,6 @@ li {
   background-color: #ff5000;
 }
 ```
+
+
+

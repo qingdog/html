@@ -252,7 +252,7 @@ background-image: linear-gradient(
 取值：
 
 * 渐变方向：可选
-  * to 方位名词
+  * to 方位名词 `to right`
   * 角度度数
 * 终点位置：可选
   * 百分比
@@ -295,7 +295,7 @@ background-image: linear-gradient(
 }
 ```
 
-### 径向渐变
+### 径向渐变（放射渐变）
 
 ```css
 background-image: radial-gradient(
@@ -303,6 +303,12 @@ background-image: radial-gradient(
   颜色1 终点位置,
   颜色2 终点位置,
   ......
+);
+
+background-image: radial-gradient(
+    50px at 10px 10px,
+    rgba(255, 255, 255, 0.5),
+    transparent
 );
 ```
 
